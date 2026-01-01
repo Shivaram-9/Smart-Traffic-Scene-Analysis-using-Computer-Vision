@@ -1,5 +1,7 @@
 venv/
 __pycache__/
 *.pyc
-*.pt
-.env
+yolov8n.pt
+outputs/*.png
+outputs/*.csv
+outputs/*.txt

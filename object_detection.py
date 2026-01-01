@@ -34,9 +34,22 @@ for r in results:
             2
         )
 
-# Save output instead of showing window
+# # Save output instead of showing window
+# output_path = "outputs/object_detection.png"
+# cv2.imwrite(output_path, image)
+
+# print(f"Object detection completed.")
+# print(f"Result saved at: {output_path}")
+
+# Save output
 output_path = "outputs/object_detection.png"
 cv2.imwrite(output_path, image)
 
+# Show output image
+cv2.imshow("Object Detection Output", image)
+cv2.waitKey(3000)   # shows for 3 seconds
+cv2.destroyAllWindows()
+
 print(f"Object detection completed.")
 print(f"Result saved at: {output_path}")
+

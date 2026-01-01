@@ -38,5 +38,10 @@ for line in text_lines:
                 cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
     y += 35
 
-cv2.imwrite("outputs/scene_understanding.png", canvas)
-print("Scene understanding result saved to outputs/scene_understanding.png")
+# cv2.imwrite("outputs/scene_understanding.png", canvas)
+# print("Scene understanding result saved to outputs/scene_understanding.png")
+
+img = cv2.imread("outputs/scene_understanding.png")
+cv2.imshow("Scene Understanding Output", img)
+cv2.waitKey(3000)
+cv2.destroyAllWindows()
